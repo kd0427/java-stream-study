@@ -1,6 +1,7 @@
 package day1;
 
 import day1.util.Adder;
+import day1.util.TriFunction;
 
 import java.util.function.BiFunction;
 import java.util.function.Function;
@@ -17,5 +18,10 @@ public class Section1_Main {
 
         BiFunction<Integer,Integer,Integer> addFn = Integer::sum;
         System.out.println(addFn.apply(5,10));
+
+        TriFunction<Integer,Integer,Integer,Integer> addTreeNumber =(x,y,z)->x+y+z;
+
+        System.out.println(addTreeNumber.apply(1,2,3));
+
     }
 }
