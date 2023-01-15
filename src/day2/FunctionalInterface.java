@@ -1,6 +1,7 @@
 package day2;
 
 import java.util.Random;
+import java.util.function.Consumer;
 import java.util.function.Supplier;
 
 public class FunctionalInterface {
@@ -14,5 +15,8 @@ public class FunctionalInterface {
         };
 
         System.out.println(supplier.get());
+
+        Consumer<String> strPrint = System.out::println;
+        strPrint.accept("프린트");
     }
 }
