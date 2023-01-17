@@ -25,7 +25,7 @@ public class FunctionalInterface {
         Consumer<Integer> a = x->{
             System.out.println(x*2); ;
         };
-        FunctionalInterface.process(IntegerInputs,a);
+        process(IntegerInputs,a);
     }
     public static void process(List<Integer> inputs, Consumer<Integer> processor){
         for(Integer input : inputs){
