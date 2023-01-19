@@ -32,6 +32,7 @@ public class FunctionalInterface {
         BiConsumer<Integer,Integer> b = (x,y)->{
             System.out.println(x+y);
         };
+        process2(IntegerInputs2,b);
     }
     public static void process(List<Integer> inputs, Consumer<Integer> processor){
         for(Integer input : inputs){
