@@ -24,13 +24,13 @@ public class FunctionalInterface {
 
         List<Integer> IntegerInputs = Arrays.asList(1,2,3,4,5,6,7,8,9);
         Consumer<Integer> a = x->{
-            System.out.println(x*2);
+            System.out.println(x*2-2);
         };
         process(IntegerInputs,a);
 
         List<Integer> IntegerInputs2 = Arrays.asList(2,4,6,8,10);
         BiConsumer<Integer,Integer> b = (x,y)->{
-            System.out.println(x-y);
+            System.out.println(x-y*2);
         };
         process2(IntegerInputs2,b);
     }
