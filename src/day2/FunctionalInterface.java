@@ -31,6 +31,7 @@ public class FunctionalInterface {
         List<Integer> IntegerInputs2 = Arrays.asList(2,4,6,8,10);
         BiConsumer<Integer,Integer> b = (x,y)->{
             System.out.println(x-y*2);
+            System.out.println("실행완료");
         };
         process2(IntegerInputs2,b);
     }
