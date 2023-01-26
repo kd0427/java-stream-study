@@ -24,7 +24,7 @@ public class FunctionalInterface {
 
         List<Integer> IntegerInputs = Arrays.asList(1,2,3,4,5,6,7,8,9);
         Consumer<Integer> a = x->{
-            System.out.println(x*2-2);
+            System.out.println(x*2-2+2);
             System.out.println("consumer 완료");
         };
         process(IntegerInputs,a);
