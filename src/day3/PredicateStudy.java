@@ -9,6 +9,6 @@ public class PredicateStudy {
         Predicate<String> auth = "ADMIN"::equals;
 
         System.out.println(isPositive.test(-10));
-        System.out.println(auth.test("ADMIN"));
+        System.out.println(auth.test("손님"));
     }
 }
