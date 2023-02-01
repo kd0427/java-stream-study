@@ -1,5 +1,7 @@
 package day3;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.function.Predicate;
 
 public class PredicateStudy {
@@ -8,7 +10,12 @@ public class PredicateStudy {
 
         Predicate<String> auth = "ADMIN"::equals;
 
+        Predicate<List<Integer>> listSize = x-> x.size()>0;
+
         System.out.println(isPositive.test(-10));
         System.out.println(auth.test("손님"));
+        List<Integer> list = new ArrayList<>();
+        list.add(1);
+        System.out.println(listSize.test(list));
     }
 }
