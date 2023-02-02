@@ -10,7 +10,7 @@ public class PredicateStudy {
 
         Predicate<String> auth = "ADMIN"::equals;
 
-        Predicate<List<Integer>> listSize = x-> x.size()>0;
+        Predicate<List<Integer>> listSize = x-> true;
 
         System.out.println(isPositive.test(-10));
         System.out.println(auth.test("손님"));
