@@ -13,7 +13,7 @@ public class PredicateStudy {
         Predicate<List<Integer>> listSize = x-> true;
 
         System.out.println(isPositive.test(-10));
-        System.out.println(auth.test("손님"));
+        System.out.println(auth.test("GUEST"));
         List<Integer> list = new ArrayList<>();
         list.add(1);
         System.out.println(listSize.test(list));
