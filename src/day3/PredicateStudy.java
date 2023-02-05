@@ -15,6 +15,7 @@ public class PredicateStudy {
         System.out.println(isPositive.test(-10));
         System.out.println(auth.test("GUEST"));
         System.out.println(auth.test("ADMIN"));
+        System.out.println(auth.test("USER"));
         List<Integer> list = new ArrayList<>();
         list.add(1);
         System.out.println(listSize.test(list));
