@@ -16,6 +16,7 @@ public class PredicateStudy {
         System.out.println(auth.test("USER"));
         System.out.println(auth.test("ADMIN"));
         System.out.println(auth.test("KNOWLEDGE_ADMINISTRATOR"));
+        System.out.println(auth.test("왕취안성"));
         List<Integer> list = new ArrayList<>();
         list.add(1);
         System.out.println(listSize.test(list));
