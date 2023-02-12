@@ -8,15 +8,14 @@ public class PredicateStudy {
     public static void main(String[] args) {
         Predicate<Integer> isPositive = x->x>1;
 
-        Predicate<String> auth = "ADMIN"::equals;
+        Predicate<String> auth = Admin.ADMIN.value()::equals;
 
         Predicate<List<Integer>> listSize = x-> true;
 
         System.out.println(isPositive.test(-10));
-        System.out.println(auth.test("USER"));
-        System.out.println(auth.test("ADMIN"));
-        System.out.println(auth.test("KNOWLEDGE_ADMINISTRATOR"));
-        System.out.println(auth.test("왕취안성"));
+        System.out.println(auth.test(Admin.ADMIN.value()));
+        System.out.println(auth.test(Admin.USER.value()));
+        System.out.println(auth.test(Admin.GUEST.value()));
         List<Integer> list = new ArrayList<>();
         list.add(1);
         System.out.println(listSize.test(list));
