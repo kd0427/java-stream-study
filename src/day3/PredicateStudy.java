@@ -16,6 +16,7 @@ public class PredicateStudy {
         System.out.println(auth.test(Admin.ADMIN.value()));
         System.out.println(auth.test(Admin.USER.value()));
         System.out.println(auth.test(Admin.GUEST.value()));
+        System.out.println(auth.test(Admin.KNOWLEDGE_ADMINISTRATOR.value()));
         List<Integer> list = new ArrayList<>();
         list.add(1);
         System.out.println(listSize.test(list));
