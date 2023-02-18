@@ -4,7 +4,11 @@ public enum Admin {
     ADMIN("ADMIN"),
     GUEST("GUEST"),
     KNOWLEDGE_ADMINISTRATOR("KNOWLEDGE_ADMINISTRATOR"),
-    USER("USER");
+    USER("USER"),
+
+    BOARD_ADMINISTRATOR("BOARD");
+
+
 
     private final String value;
 
