@@ -20,6 +20,7 @@ public class PredicateStudy {
         System.out.println(auth.test(Admin.BOARD_ADMINISTRATOR.value()));
         List<Integer> list = new ArrayList<>();
         list.add(1);
+        list.add(2);
         System.out.println(listSize.test(list));
     }
 }
