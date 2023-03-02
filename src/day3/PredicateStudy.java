@@ -25,6 +25,7 @@ public class PredicateStudy {
         list.add(4);
         list.add(5);
         list.add(6);
+        list.add(7);
         System.out.println(listSize.test(list));
     }
 }
